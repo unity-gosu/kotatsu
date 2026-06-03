@@ -8,6 +8,16 @@
     <link rel="stylesheet" href="TemplateData/style.css">
   </head>
   <body>
+    <!-- G4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LRLZJZXBWV"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-LRLZJZXBWV');
+    </script>
+    <!-- G4 -->
+    <!-- U5 -->
     <div id="unity-container" class="unity-desktop">
       <canvas id="unity-canvas" width=1280 height=800 tabindex="-1"></canvas>
       <div id="unity-loading-bar">
@@ -23,6 +33,8 @@
         <div id="unity-build-title">Stray＆Kotatsu</div>
       </div>
     </div>
+    <!-- U5 -->
+    <!-- GL -->
     <script>
       var canvas = document.querySelector("#unity-canvas");
 
@@ -63,29 +75,7 @@
         productName: "Stray＆Kotatsu",
         productVersion: "1.0",
         showBanner: unityShowBanner,
-        // errorHandler: function(err, url, line) {
-        //    alert("error " + err + " occurred at line " + line);
-        //    // Return 'true' if you handled this error and don't want Unity
-        //    // to process it further, 'false' otherwise.
-        //    return true;
-        // },
       };
-
-      // By default, Unity keeps WebGL canvas render target size matched with
-      // the DOM size of the canvas element (scaled by window.devicePixelRatio)
-      // Set this to false if you want to decouple this synchronization from
-      // happening inside the engine, and you would instead like to size up
-      // the canvas DOM size and WebGL render target sizes yourself.
-      // config.matchWebGLToCanvasSize = false;
-
-      // If you would like all file writes inside Unity Application.persistentDataPath
-      // directory to automatically persist so that the contents are remembered when
-      // the user revisits the site the next time, uncomment the following line:
-      // config.autoSyncPersistentDataPath = true;
-      // This autosyncing is currently not the default behavior to avoid regressing
-      // existing user projects that might rely on the earlier manual
-      // JS_FileSystem_Sync() behavior, but in future Unity version, this will be
-      // expected to change.
 
       if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
         // Mobile device style: fill the whole browser client area with the game canvas:
@@ -127,7 +117,52 @@
             };
 
       document.body.appendChild(script);
-
     </script>
+    <!-- GL -->
+
+<!--
+             `           `         ` (,         `   `    ` ..p                                      
+         `                      `   J=N, `             ` .-D`M.  `  `  `  `  `  `  `  `  `  `  `    
+    `                        `     .F ,N.             `.JD   d}                                     
+       `    `   `  `  `            M_..JN. `  `  `  ` .MWppk&d\                                   ` 
+                         `  `      MppUYTb           db-.. ?TM!                                     
+   `                               M....dM; .........#?TWppk+#     `   `   `   `    `   `   `   `   
+      `  `   `   `             `   M,.T.=dB"!`..`-?7UF    .7WF                                      
+                   `  `     `   `..JBQ#"```.`.``.``.`.     .M`                    `                 
+    `                    `    .J#"_.B!`. .`.`.`....`.`.`. ."Be   `  `  `  `  `        `  `  `  `    
+           `  `   `        .gB^_ .H^``.`.{.(o.`.`._?i.`.`.``.(N,                `                   
+       `                  `?N,..(@.`.`.`.I.>(1.j<`.`(o.`.`.``..W,                                   
+   `                  `    ,@..(@.+.`.`...!  ._?7`.`.(l.`.j_.`. W,                 `            `   
+      `   `    `  `         ?MNM~J!.+Mb`.    ``...,.`.z_`.(o..``.N.  `  `  `  `       `  `  `       
+                           .d9J$.F`.WB!  .   .``JMMt`.z_.`+.+O:..(b                                 
+     `               `  ` .#!(MMM!.`.   .z<    .`-``..Z`....``.``.N              `             `    
+           `  `   `      .@..-(MF.`   !(+vi.._  .`.`.(>.`.v~..`.`.M.                `               
+   `    `                MkH""'M`      .1<?`       .(o.Jv!.``..`.`(N.   `  `  `        `  `      `  
+      `                        M.  `                 `..,.`..`..`..(N,                       `      
+               `  `  `         .N,   `       `        `.{`...`.......Wp          `                  
+           `                `.d5_Th,`    `      `   `..v_........(:~~(#             `    `      `   
+   `    `                `   dt:::JYTG-.   ` ....JzVT1Z~..~.~~~~(Z~_(#'  `   `                      
+                 `    `      Tm<;jW-((zZ<?OYUs<:::::(M3~~~~:~:((Mb(@^                       `       
+      `                       .#>dWY"!(>._({  7UkwXYT#:::;;:jj#TMMMt              `   `             
+               `    `        ?MWM#   .0??w`      `   We;>>>u#!``.We    `       `                `   
+    `                           -F   X!  Z.           ?Bax&dNJ.```/N,                     `         
+        `              `   `    J[  +-   7!  `       .`.`.?7<``.`.`.We     `                        
+             `   `              d)       ~!        `.`.`.`````.`..`..Up  `                    `     
+    `               `        `  d[.   `           .``.`.`....`.```. `.W,            `   `           
+        `              `  `     J]..             .`..`.`.``.`.`..`  .`,b    `  `                    
+                 `    `      .._Jb`.   `      `  `.``.`.`.``.`.`. `.`..N~~~(dMMa,`                  
+    `        `     `  .._~~~~~~~_M.. ..   `       `.``.`(:.``.``.`.`.`.#~~~~~(M<?N, `       `   `   
+       `        `  .~~~~~:~~~~~~~d]    1.,         ..`..!...`.`..``.`..#~~:((M5::jN-  `             
+                .~~~~:~~~~~:~:~~~(N      ..`  `     `.`    `.`.``.`.` d""""=_.~~(jF~~~-  `          
+   `     `   ` ~~~:~~~:~~~:(z_<~~~M<     jtti        .!    ``.`..`.`.dD..`..._(+#=~~~~~~-           
+      `       ~~~:~~~~~~:~~~~~~~:~dt `  (yttt       .Z     .``.``.`.MNgggggHMB6=z<~~~:~~~_  `       
+            ` ~~~~~~~:~~~~~~~~:~~(M~;, .MMMNm.   ` .wy.    ..`.`..dB9I==z<<<<<<~~~~~~~:~~_      `   
+              `~:~~:~~~:~~~:~~~~~_TNmWM91==zM`..  .#YWM3v<?!.gMH9I=<<<~~~~~~~~~~~~~:~~~~_`          
+    `    `      _~~~~~~~~:~~:~~:~~~~~<<<<<<?TQ+JgM5===dN.gJHB=<<<~~~~~~~~~~~:~~~~:~~~:_`    `       
+                  _~~:~~~~~~~~~~~~~~~~~~~~~~~~~~_<<<<<<~~~~~~~~~~~~~~~~~~:~~~:~~:~_``   `           
+      `              `_~~~:~~:~~~:~:~~~:~~~~~~~~~~~~~~~~~~~~~~~~:~~:~~:~~~~~__``                    
+               `          `__~~~:~~~:~~~~:~:~:~~~~~~~~~~~~:~~:~~~~~___``  `                     `   
+   `     `                    `    `````________~______```````  `                           `       
+-->
   </body>
 </html>
